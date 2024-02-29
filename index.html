@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéAPI</title>
+    <link rel="stylesheet" href="./css/reboot.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="" id="nav-bar">
+            <button onClick="accueil()" class="lien-nav pointer">
+                <img src="./images/pokeball.png" alt="Image de pokeball" class="logos">
+                <h1 class="titres">Accueil</h1>
+            </button>
+            <div class="dropdown-search">
+                <input type="text" oninput="searchPoke()" placeholder="Chercher un pokémon" id="search-bar" onfocus="searchPoke()" onfocusout="setTimeout(() => {notSearchPoke()}, 125)">
+                <ul class="dropdown-content-search" id="search-list"></ul>
+            </div>
+                <div class="dropdown">
+                <button onClick="" class="lien-nav pointer">
+                    <h2 class="titres">Pokémons</h2>
+                    <img src="./images/pikachu_nbg.png" alt="Image d'un pikachu" class="logos">
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown2">
+                        <button class="pointer">Choisir un type</button>
+                        <div class="dropdown-content2">
+                            <button class="pointer" onClick="pokeType('Acier')">Acier</button>
+                            <button class="pointer" onClick="pokeType('Combat')">Combat</button>
+                            <button class="pointer" onClick="pokeType('Dragon')">Dragon</button>
+                            <button class="pointer" onClick="pokeType('Eau')">Eau</button>
+                            <button class="pointer" onClick="pokeType('Électrik')">Électrik</button>
+                            <button class="pointer" onClick="pokeType('Fée')">Fée</button>
+                            <button class="pointer" onClick="pokeType('Feu')">Feu</button>
+                            <button class="pointer" onClick="pokeType('Glace')">Glace</button>
+                            <button class="pointer" onClick="pokeType('Insecte')">Insecte</button>
+                            <button class="pointer" onClick="pokeType('Normal')">Normal</button>
+                            <button class="pointer" onClick="pokeType('Plante')">Plante</button>
+                            <button class="pointer" onClick="pokeType('Poison')">Poison</button>
+                            <button class="pointer" onClick="pokeType('Psy')">Psy</button>
+                            <button class="pointer" onClick="pokeType('Roche')">Roche</button>
+                            <button class="pointer" onClick="pokeType('Sol')">Sol</button>
+                            <button class="pointer" onClick="pokeType('Spectre')">Spectre</button>
+                            <button class="pointer" onClick="pokeType('Ténèbres')">Ténèbres</button>
+                            <button class="pointer" onClick="pokeType('Vol')">Vol</button>
+                        </div>
+                    </div>
+                    <button onClick="pokedex()" class="pointer">Afficher tous les pokémons</button>
+                    <button onClick="randomPoke()" class="pointer">Afficher un pokémon aléatoire</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="gauche"><div class="rouge bloc"></div><div class="noir"></div><div class="blanc bloc"></div></div>
+        <div id="centre"><iframe src="./pages/accueil.html" frameborder="0" id="frame"></iframe></div>
+        <div id="droite"><div class="rouge bloc"></div><div class="noir"></div><div class="blanc bloc"></div></div>
+    </main> 
+    <footer>
+      
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>

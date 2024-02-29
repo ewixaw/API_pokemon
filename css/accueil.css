@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    background-color: rgb(222, 239, 255);
+    width: max-content;
+    padding: 2%;
+    margin: 2% 5%;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 300%;
+}
+
+p, li {
+    font-size: 200%;
+}

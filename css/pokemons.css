@@ -1,0 +1,217 @@
+#grid, #grid-type {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+}
+
+#grid-type {
+    justify-content: center;
+}
+
+.boite {
+    background-color: rgb(222, 239, 255);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    height: 352px;
+    width: 202.5px;
+    margin: 22px 11px;
+}
+
+.boite:hover {
+    background-color: rgb(205, 229, 253);
+    border-radius: 10px;
+    position: relative;
+    margin: 22px 11px;
+}
+
+.nom {
+    margin: 2px 0;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.photo {
+    width: 100%;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+
+    bottom: 0;
+}
+
+#add_pokes {
+    font-size: 250%;
+    border: black solid 4px;
+    background-color: #D70E0E;
+    color: white;
+    border-radius: 50px;
+    padding: 1% 4%;
+    margin-bottom: 2%;
+    font-weight: 700;
+}
+
+#add_pokes:hover {
+    font-size: 250%;
+    border: black solid 4px;
+    background-color: #ff3232;
+    color: white;
+    border-radius: 50px;
+    padding: 1% 4%;
+    margin-bottom: 2%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------ */
+
+#haut {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+#poke_nom {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 900;
+    margin: 0 2%;
+}
+
+.logo-types {
+    height: 100%;
+}
+
+#all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tb-evo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 30px 15px;
+}
+
+.en-tete {
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.logo-evo, .logo-around {
+    width: 100px;
+}
+
+.cellules-evo {
+    font-size: 150%;
+}
+
+#milieu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+#stat-list {
+    list-style-type: none;
+}
+
+.stats {
+    margin: 5% 0%;
+    font-size: 150%;
+}
+
+.photos {
+    width: 40%;
+}
+
+#all-resi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: center;
+    margin: 5% 2%;
+    font-size: 120%;
+}
+
+#immu {
+    background-color: black;
+    color: white;
+}
+
+#t-resi {
+    background-color: rgb(2, 128, 2);
+}
+
+#resi {
+    background-color: rgb(92, 196, 92);
+}
+
+#faibl {
+    background-color: orange;
+}
+
+#t-faibl {
+    background-color: red;
+}
+
+#change-poke {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.poke-around {
+    display: inline-block;
+}
+
+.around, .around:hover {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.logo-around {
+    vertical-align: middle;
+}
+
+.big {
+    font-size: 250%;
+}
+
+.petit, .petit:hover {
+    height: auto;
+    width: auto;
+}
+
+#retour {
+    border: black solid 4px;
+    background-color: #D70E0E;
+    color: white;
+    border-radius: 50px;
+    padding: 1%;
+    margin-bottom: 2%;
+    font-weight: 700;
+    height: fit-content;
+}
+
+#retour:hover {
+    border: black solid 4px;
+    background-color: #ff3232;
+    color: white;
+    border-radius: 50px;
+    padding: 1%;
+    margin-bottom: 2%;
+}
